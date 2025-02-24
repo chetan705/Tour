@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Explore Uttarakhand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./stylesheets/profile.css">
+</head>
+
+<body>
+  <section class="headerbar">
+    <div class="header-section">
+      <div class="menuopen-btn" id="menu-open-btn">
+        <span>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+      </div>
+      <header id="header">
+        <div class="first-section">
+          <a href="./index.html" class="logo">
+            <img src="./Assests/logo.svg" alt="logo">
+          </a>
+          <span id="menu-close-btn">
+            <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+          </span>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a> </li>
+            <li class="district-container"><a>Districts</a>
+              <div class="districts">
+                <ul id="district-list">
+                </ul>
+              </div>
+            </li>
+        
+            <li><a href="./contact-us.html">Contact</a> </li>
+            <li><a href="./about.html">About</a> </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="profile-section">
+        <div class="profile-image" id="headerProfileImage">
+        </div>
+        <div class="links hide">
+          <a href="./profile.html">Profile</a>
+          <div id="login-logout" class="btn">
+            <!-- login logout btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="main-container">
+    <div class="main-section">
+      <div class="slidebar" id="slidebar">
+        <div class="slidebar-link">
+          <div data-link="info" title="Your Information">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Information</p>
+          </div>
+          <div data-link="blogs" title="Your Blogs">
+            <i class="fa-brands fa-microblog"></i>
+            <p>Your blog</p>
+          </div>
+          <div data-link="gallery" title="Your Images">
+            <i class="fa-solid fa-image"></i>
+            <p>Your Images</p>
+          </div>
+          <div data-link="review" title="Your Reviews">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Your Reviews</p>
+          </div>
+          <div data-link="booking" title="Your Bookings">
+            <i class="fa-solid fa-hotel"></i>
+            <p>Your Bookings</p>
+          </div>
+          <div data-link="reset_passsword" title="Reset Password">
+            <i class="fa-solid fa-unlock"></i>
+            <p>Reset Password</p>
+          </div>
+        </div>
+      </div>
+
+      <dialog id="imageSelectorBox">
+        <img src="" class="image-preview" alt="">
+        <input type="file" name="fileSeleteBtn" id="fileSelectBtn" accept="image/*">
+        <div>
+          <button class="m-0" type="button" id="updateImageBtn">Update</button>
+          <button class="m-0" type="button" id="closeModalBtn">Close</button>
+        </div>
+      </dialog>
+      <div class="content-section">
+        <div class="info-section" data-type="info">
+          <div class="user-info">
+          </div>
+          <div class="stat-section mt-1">
+            <h4 class="tx-center mb-1">Your Stats</h4>
+            <div class="stat-box">
+              <div>
+                <p>Total Blogs Uploaded :</p>
+                <span id="totalBlogs"></span>
+              </div>
+              <div>
+                <p>Total Pictures Uploaded :</p>
+                <span id="totalPictures"></span>
+              </div>
+              <div>
+                <p>Total Reviews :</p>
+                <span id="totalReviews"></span>
+              </div>
+              <div>
+                <p>Total Likes:</p>
+                <span id="totalLikes">12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-section" data-type="gallery">
+          <h3 class="sub-heading tx-center mb-2">Uploaded Images</h3>
+          <div class="alluploadedImages mt-1">
+          </div>
+        </div>
+
+        <div class="review-section" data-type="review">
+          <h3 class="sub-heading tx-center mb-2">Your Reviews</h3>
+          <div class="allUploadedReviews">
+          </div>
+        </div>
+
+        <div class="booking-section" data-type="booking">
+          <h3 class="sub-heading tx-center mb-2">Your Bookings</h3>
+          <div class="allBookings">
+          </div>
+        </div>
+
+        <div class="reset_passsword-section" data-type="reset_passsword">
+          <h3 class="sub-heading tx-center">Reset Your Password</h3>
+          <div class="reset_password mt-1">
+            <form method="post" id="updatePassword">
+              <div class="input-field">
+                <label>Old Password</label>
+                <input type="password" id="oldPass" name="oldPass" placeholder="Old Password" required>
+              </div>
+
+              <div class="input-field">
+                <label>New Password </label>
+                <input type="password" name="newPass" id="newPass" placeholder="New Password" required>
+              </div>
+
+              <div class="input-field">
+                <label>Confirm Password</label>
+                <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" required>
+              </div>
+              <button type="submit">Reset</button>
+              <div id="showError" class="error tx-center">
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <section class="footer-section container" id="footerContainer">
+    <!-- footer section -->
+  </section>
+
+  <script src="./scripts/profile.js"></script>
+  <script src="./scripts/profile2.js"></script>
+  <script src="./scripts/logout.js"></script>
+  <script src="./scripts/global.js"></script>
+</body>
+
+</html>

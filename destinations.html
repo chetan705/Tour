@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Explore Uttarakhand</title>
+  <!-- link goggle font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- font-awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./stylesheets/destination.css">
+  <!-- swiper library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <section class="headerbar">
+    <div class="header-section sc-xl">
+      <div class="menuopen-btn" id="menu-open-btn">
+        <span>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+      </div>
+      <header id="header">
+        <div class="first-section">
+          <a href="./index.html" class="logo">
+            <img src="./Assests/logo.svg" alt="logo">
+          </a>
+          <span id="menu-close-btn">
+            <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+          </span>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a> </li>
+            <li class="district-container"><a>Districts</a>
+              <div class="districts">
+                <ul id="district-list">
+                </ul>
+              </div>
+            </li>
+          
+            <li><a href="./contact-us.html">Contact</a> </li>
+            <li><a href="./about.html">About</a> </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="profile-section">
+        <div class="profile-image" id="headerProfileImage">
+        </div>
+        <div class="links hide">
+          <a href="./profile.html">Profile</a>
+          <div id="login-logout" class="btn">
+            <!-- login logout btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <section class="info-section container">
+      <div class="info-container sc-xl">
+        <h1 class="heading">Reason why you should visit Uttarakhand</h1>
+        <p>A land of myths and mountains, Devbhoomi Uttarakhand, is one of the most beautiful states of India.
+          Snow-capped Himalayan peaks, serpentine rivers, revered temples, quaint villages, vibrant culture,
+          and World Heritage Sites, Uttarakhand's sheer natural beauty and diversity beckon travelers from
+          across the world.
+        </p>
+        <div class="item-container">
+          <div class="first">
+            <img src="./Assests/trek-uttrakhand.jpg" alt="Image">
+            <h3>Treks</h3>
+          </div>
+          <div class="second">
+            <div>
+              <img src="./Assests/wildlife.jpg" alt="Image">
+              <h3>Wildlife</h3>
+            </div>
+            <div>
+              <img src="./Assests/spiritural.jpg" alt="Image">
+              <h3>Spiritual</h3>
+            </div>
+          </div>
+          <div class="third">
+            <img src="./Assests/nature.jpg" alt="Image">
+            <h3>Nature</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container popular-destination">
+      <h2 class="heading mb-2">Popular Destinations</h2>
+      <div class="destination-container sc-xl" id="destinationContainer">
+        <!-- popular destinations -->
+      </div>
+      <div class="slide-control mt-1">
+        <button id="showPreviousSlide">&lt;</button>
+        <button id="showNextSlide">&gt;</button>
+      </div>
+    </section>
+
+    <section class="container trek-section" id="treksSection">
+      <div class="sc-xl">
+        <div class="treks">
+        </div>
+        <div class="treks-container scrollbar">
+          <!-- treks cards -->
+        </div>
+      </div>
+    </section>
+
+
+    <section class="spiritual container">
+      <div class="spiritual-section" id="spiritualSection">
+        <h2 class="heading mb-1"></h2>
+        <p> </p>
+        <div class="place-info sc-xl" id="spiritualContainer">
+          <!-- spiritual places -->
+        </div>
+      </div>
+    </section>
+
+    <section class="wildlife-section container">
+      <div class="wildlife-container sc-xl">
+        <div class="left">
+          <div class="info">
+            <h2 class="heading">Into The Wild</h2>
+            <p>A haven for nature and wildlife enthusiasts. Uttarakhand’s rich and varied wildlife never
+              ceases
+              to amaze. The state boasts as many as 6 national parks.
+            </p>
+          </div>
+          <div class="wildlife-box">
+            <a href="#">
+              <img src="./Assests/Himalayan Monal in Kedarnath Wildlife Sanctuary Uttarakhand India(400_400).jpg"
+                alt="wildlife">
+              <h4>Kedarnath Wildlife Sanctuary</h4>
+            </a>
+            <a href="#">
+              <img src="./Assests/Feature_Rajaji National Park.jpg" alt="wildlife">
+              <h4>Rajaji National Park</h4>
+            </a>
+          </div>
+        </div>
+        <div class="right">
+          <a href="#" class="wildlife-card"><img src="./Assests/Corbett_Feature image_1.jpg" alt="wildlife-image">
+            <h4>Corbett National Park</h4>
+          </a>
+          <a href="#" class="wildlife-card"><img src="./Assests/Feature_0.jpg" alt="wildlife-image">
+            <h4>Nanda Devi National Park</h4>
+          </a>
+          <a href="#" class="wildlife-card"><img src="./Assests/Feature_Govind National Park.jpeg" alt="wildlife-image">
+            <h4>Govind National Park</h4>
+          </a>
+          <a href="#" class="wildlife-card"><img src="./Assests/Feature_Nandhaur Wildlife Sanctuary.jpeg"
+              alt="wildlife-image">
+            <h4>Nandhaur Wildlife Sanctuary</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="footer-section container" id="footerContainer">
+    <!-- footer section -->
+  </section>
+  <script src="./scripts/logout.js"></script>
+  <script src="./scripts/global.js"></script>
+  <script src="./scripts/destination.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+{
+  "info": {
+    "heading": "Reason why you should visit Uttarakhand",
+    "content": "A land of myths and mountains, Devbhoomi Uttarakhand, is one of the most beautiful states of India.Snow-capped Himalayan peaks, pentine rivers, revered temples, quaint villages, vibrant culture, and World Heritage Sites, Uttarakhand's sheer natural beauty and diversity beckon travelers from across the world."
+  },
+  "treks": {
+    "heading": "Popular Treks",
+    "content": "Uttarakhand is blessed with a scenic hilly terrain that renders the state as one of the best in the country for trekking. From beginners to the seasoned - everyone can test their physical stamina here.",
+    "trek": [
+      {
+        "trekName": "Chopta Chandrashilla ",
+        "location": "Rudraprayag",
+        "bestSeason": "Monsoon months of June-October",
+        "difficultyLevel": "Moderate",
+        "distance": 30,
+        "altitude": 3000,
+        "imageUrl": "#",
+        "trekDuration": "5-6 days",
+        "image": "Chopta_Chandrashilla.jpg"
+      },
+      {
+        "trekName": "Har Ki Doon",
+        "location": "Uttarakashi",
+        "bestSeason": "March-June",
+        "difficultyLevel": "Hard",
+        "distance": 44,
+        "altitude": 3566,
+        "imageUrl": "#",
+        "trekDuration": "10-11 days",
+        "image": "Har_ki_dun.jpg"
+      },
+      {
+        "trekName": "Valley of Flowers",
+        "location": "Uttarakashi",
+        "bestSeason": "Monsoon months of June-October",
+        "difficultyLevel": "Hard",
+        "distance": 60,
+        "altitude": 5000,
+        "imageUrl": "#",
+        "trekDuration": "4-5 days",
+        "image": "vally_of_flowers.jpg"
+      },
+      {
+        "trekName": "Kedarkantha",
+        "location": "Chamoli",
+        "bestSeason": "Monsoon months of June-October",
+        "difficultyLevel": "Moderate",
+        "distance": 38,
+        "altitude": 3500,
+        "imageUrl": "#",
+        "trekDuration": "5-6 days",
+        "image": "Kedarkantha.jpg"
+      },
+      {
+        "trekName": "Kedartal Trek",
+        "location": "Chamoli",
+        "bestSeason": "May-June and September-October",
+        "difficultyLevel": "Hard",
+        "distance": 50,
+        "altitude": 4750,
+        "imageUrl": "#",
+        "trekDuration": "6-7 days",
+        "image": "Kedartal.jpg"
+      },
+      {
+        "trekName": "Dayara Bugyal",
+        "location": "Uttarakashi",
+        "bestSeason": "May-June",
+        "difficultyLevel": "Moderate",
+        "distance": 40,
+        "altitude": 3408,
+        "imageUrl": "#",
+        "trekDuration": "6 days",
+        "image": "Dayara_Bugyal_Trek.jpg"
+      },
+      {
+        "trekName": "Deoriatal",
+        "location": "Rudraprayag",
+        "bestSeason": "April – June",
+        "difficultyLevel": "Easy",
+        "distance": 27,
+        "altitude": 2438,
+        "imageUrl": "#",
+        "trekDuration": "4 days",
+        "image": "Deoriatal.jpg"
+      },
+      {
+        "trekName": "Brahmatal Trek",
+        "location": "Chamoli",
+        "bestSeason": "December to February",
+        "difficultyLevel": "Moderate",
+        "distance": 30,
+        "altitude": 3400,
+        "imageUrl": "#",
+        "trekDuration": "6 days",
+        "image": "Brahmatal_Trek.jpg"
+      },
+      {
+        "trekName": "Satopanth Lake",
+        "location": "Chamoli",
+        "bestSeason": "June to August",
+        "difficultyLevel": "Moderate",
+        "distance": 50,
+        "altitude": 4260,
+        "imageUrl": "#",
+        "trekDuration": "7 days",
+        "image": "Satopanth.jpg"
+      },
+      {
+        "trekName": "Bagini Glacier Trek",
+        "location": "Chamoli",
+        "bestSeason": "June to August",
+        "difficultyLevel": "Moderate",
+        "distance": 43,
+        "altitude": 4560,
+        "imageUrl": "#",
+        "trekDuration": "9 days",
+        "image": "Bagini_Glacier.jpg"
+      }
+    ]
+  },
+  "spiritual": {
+    "heading": "Temples and Sacred Sites",
+    "content": "Steeped in religious mythology, legends and heritage, Uttarakhand is home to a number of revered temples, holy rivers and spiritual sites. Devotees flock to here for pilgrimages to Char Dham and to Panch Prayag, the confluence of rivers in five sites that ultimately form River Ganga, one of India’s most sacred rivers and worshipped as a goddess, along with visits to several other destinations of religious importance in the state that is also referred to as the land of pilgrims."
+  }
+}

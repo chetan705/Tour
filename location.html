@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Uttarakhand Tourism </title>
+  <!-- link goggle font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./stylesheets/location.css">
+  <!-- font-awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- include swiper library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- leaflet js library css file -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- leaflet Js files -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+
+<body>
+  <dialog id="hotelBookingForm">
+    <span id="dialogClosebtn">
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </span>
+    <form method="post" id="bookingForm">
+      <h4 class="tx-center">Fill Your Details</h4>
+      <div class="input-field">
+        <label for="customerName">Name</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Name" required readonly>
+      </div>
+      <input type="hidden" name="customerEmail">
+      <div class="input-field">
+        <label for="checkIn">Check in Date</label>
+        <input type="date" name="checkIn" id="checkIn" placeholder="Check In Date" required>
+      </div>
+
+      <div class="input-field">
+        <label for="checkOut">Check Out Date</label>
+        <input type="date" name="checkOut" id="checkOut" placeholder="Check Out Date" required>
+      </div>
+
+      <div class="input-field">
+        <label for="noOfRoom">Rooms</label>
+        <input type="number" min="1" max="3" name="noOfRoom" id="noOfRoom" placeholder="Number of Rooms" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="checkoutForm">
+      <form method="post" id="paymentForm">
+        <h4 class="tx-center">Payment Details</h4>
+        <div class="input-field">
+          <label for="cardholderName">Name</label>
+          <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Cardholder Name" required>
+        </div>
+
+        <div class="input-field">
+          <label for="cardNumber">Card Number</label>
+          <input type="number" name="cardNumber" id="cardNumber" placeholder="Card number" required>
+        </div>
+
+        <div class="expiry-section">
+          <div class="input-field">
+            <label for="expiryYear">Expiry </label>
+            <input type="number" min="1" max="12" name="expiryMonth" id="expiryMonth" placeholder="Month" required>
+            <input type="number" min="2023" max="2050" name="expiryYear" id="expiryYear" placeholder="Year" required>
+          </div>
+          <div class="input-field">
+            <label for="cvvNumber">CVV</label>
+            <input type="number" min="100" max="999" name="cvvNumber" id="cvvNumber" placeholder="CVV" required>
+          </div>
+        </div>
+
+        <div>
+          <h4>Total Amount : <span id="totalPayment"></span></h4>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="showError" class="tx-center error mt-1">
+
+    </div>
+  </dialog>
+
+  <section class="headerbar">
+    <div class="header-section sc-xl">
+      <div class="menuopen-btn" id="menu-open-btn">
+        <span>
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+      </div>
+      <header id="header">
+        <div class="first-section">
+          <a href="./index.html" class="logo">
+            <img src="./Assests/logo.svg" alt="logo">
+          </a>
+          <span id="menu-close-btn">
+            <i class="fa-solid fa-xmark fa-xl" style="color: #ffffff;"></i>
+          </span>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a> </li>
+            <li class="district-container"><a>Districts</a>
+              <div class="districts">
+                <ul id="district-list">
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="./contact-us.html">Contact</a> </li>
+            <li><a href="./about.html">About</a> </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="profile-section">
+        <div class="profile-image" id="headerProfileImage">
+        </div>
+        <div class="links hide">
+          <a href="./profile.html">Profile</a>
+          <div id="login-logout" class="btn">
+            <!-- login logout btn -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <div class="banner-section" id="location-details">
+      <!-- LOCATION INFO -->
+    </div>
+
+    <div class="info-section container">
+      <div class="sc-xl">
+        <div class="info card" id="location-info-card">
+
+        </div>
+        <div class="weather-section card" id="weather-container">
+          <!-- <div class="weather-map" id="weather-condition">
+                </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="how-to-reach sc-xl">
+        <h2 class="sub-heading">How to Reach</h2>
+        <div class="card-container" id="how-to-reach">
+          <!-- how to reach -->
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="location-gallery-container sc-xl">
+        <div class="mb-1">
+          <h2 class="sub-heading">Pictures Form Travellers</h2>
+          <button class="m-0" id="pictureUploadBtn">Upload Picture</button>
+        </div>
+
+        <div id="pictureUploadForm" class="hide">
+          <form method="post" id="pictureform">
+            <div class="input-field">
+              <label for="uploaderName">Name</label>
+              <input type="text" id="uploaderName" name="uploaderName" placeholder="Your Name" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label for="imageField">UploadImages</label>
+              <input type="url" name="imageField" id="imageField" placeholder="Image Url" required>
+            </div>
+            <div>
+              <img src="" class="previewImage" alt="">
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="picture-container" id="galleryContainer">
+          <!-- images -->
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="hotel-section sc-xl">
+        <h2 class="sub-heading">Nearby Hotels </h2>
+        <div class="hotel-list" id="hotelList">
+          <!-- hotel list -->
+        </div>
+      </div>
+    </section>
+    <section class="map-section container">
+      <div class="sc-xl">
+        <h2 class="sub-heading">Get Direction</h2>
+        <div class="map" id="map">
+        </div>
+      </div>
+    </section>
+
+    <section class="user-reviews container">
+      <div class="sc-xl">
+        <div class="mb-2 header">
+          <h2 class="sub-heading">Reviews and Ratings</h2>
+          <button type="button" id="reviewFormBtn">Write your Review</button>
+        </div>
+
+        <div id="reviewForm" class="hide">
+          <form method="post" id="review-form">
+            <div class="input-field">
+              <label for="user-name">User Name</label>
+              <input type="text" id="username" name="username" placeholder="Your Name" required readonly>
+            </div>
+            <div class="input-field">
+              <label for="rate">Rate This Place</label>
+              <select name="rating" id="rate" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <input type="hidden" name="useremail" id="useremail">
+
+            <div class="input-field">
+              <label for="review">Review</label>
+              <textarea name="review" id="review" placeholder="Write you review" required></textarea>
+              <span class="error" id="msgError"></span>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="reviews sc-xl" id="reviews">
+        <!-- all reviews -->
+      </div>
+    </section>
+  </main>
+
+  <section class="footer-section container" id="footerContainer">
+    <!-- footer section -->
+  </section>
+  <script src="./scripts/logout.js"></script>
+  <script src="./scripts/global.js" type="module"> </script>
+  <script src="./scripts/location.js" type="module"> </script>
+  <script src="./scripts/weather.js" type="module"> </script>
+</body>
+
+</html>

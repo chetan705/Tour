@@ -1,0 +1,87 @@
+{
+  "slider": {
+    "heading": "Why Visit Uttarakhand",
+    "slides": [
+      {
+        "heading": "Land Of Gods",
+        "content": "Called Devbhoomi (Land of the gods), Uttarakhand is home to one of the highest Lord Shiva temples in the world, the Char Dham (four revered sites), the Panch Kedar (five temples dedicated to Lord Shiva), the Panch Badri (five temples dedicated to Lord Vishnu) and the Panch Prayag (five confluences of the holy Ganges river).",
+        "image": "./Assests/lord shiva.jpg"
+      },
+      {
+        "heading": "Adventure Hub",
+        "content": " From white water rafting to paragliding, from bungee jumping to trekking and from skiing to mountain biking - there is no dearth of adventure activities to be had and experienced in Uttarakhand. While Auli is known as he skiing paradise of India, Rishikesh hosts India's highest bungee platform!.",
+        "image": "./Assests/trek-uttrakhand.jpg"
+      },
+      {
+        "heading": "Where The Beatles Prayed",
+        "content": "Take a trip down memory lane at the Beatles Ashram, where members of the British rock band The Beatles stayed during their visit to India in 1968. A popular tourist spot in Rishikesh, the ashram, also known as Chaurasia Kutir, is located inside the Rajaji Tiger Reserve (RTR).",
+        "image": "./Assests/Corbett_Feature image_1.jpg"
+      },
+      {
+        "heading": "Char Dham Yatra",
+        "content": "This annual pilgrimage to four temple destinations in Uttarakhand - Yamunotri, Gangotri, Kedarnath and Badrinath - is considered to be one of the most sacred in Hinduism, and draws millions of devotees.",
+        "image": "./Assests/spiritural.jpg"
+      },
+      {
+        "heading": "Yoga Capital Of The World",
+        "content": "The city of Rishikesh. located on the banks of the River Ganges, is popularly called the Yoga capital of the world. Every year around March, it hosts the International Yoga Festival, which is attended by yoga enthusiasts, practitioners and gurus from across the world in large numbers.",
+        "image": "./Assests/Yoga.jpg"
+      }
+    ]
+  },
+  "chardhamm": {
+    "heading": "Journey to Divinity",
+    "subHeading": "Divine Pilgrimage Through the Himalayas",
+    "images": [
+      "./Assests/Badrinath.jpeg",
+      "./Assests/Yamunotri feature.jpg",
+      "./Assests/Gangotri.jpeg",
+      "./Assests/Kedarnath.jpeg"
+    ],
+    "content": "Char Dham (sacred Hindu shrines of Badrinath, Kedarnath, Gangotri and Yamunotri) are situated in the snow-covered reaches of the lofty Garhwal Himalayas, Uttaranchal. This part of the Himalayas is referred as the land of the gods in the ancient Hindu mythology. The Char Dham Yatra is popular among the Hindus that thousands of pilgrims visit these four holy shrines every year.Devotees visit the four Dham (shrines) all for a spiritual union with the divine. "
+  },
+  "testimonials": {
+    "heading": "Traveler Testimonials",
+    "content": "Hear from our travelers about their unforgettable experiences     exploring the serene landscapes, vibrant culture, and thrilling adventures in Uttarakhand.",
+    "testimonialsCards": [
+      {
+        "testimonial": "Exploring Uttarakhand was a dream come true. The natural beauty, adventure activities, and spiritual sites made our trip perfect. Can't wait to return!",
+        "userImage": "./Assests/velly of flower.jpg",
+        "name": "Robin Rawat"
+      },
+      {
+        "testimonial": "We had an amazing time in Uttarakhand. The trekking experiences and scenic views were beyond expectations. A wonderful destination for nature lovers",
+        "userImage": "./Assests/velly of flower.jpg",
+        "name": "Rahul Bisht"
+      },
+      {
+        "testimonial": "Our stay in Uttarakhand was fantastic. The picturesque landscapes and the warm hospitality of the people made our trip memorable. A beautiful place!",
+        "userImage": "./Assests/velly of flower.jpg",
+        "name": "Prapti"
+      },
+      {
+        "testimonial": "Uttarakhand's natural beauty is captivating. The peaceful ambiance and the friendly locals made our trip extraordinary. Highly recommend visiting this beautiful state",
+        "userImage": "./Assests/velly of flower.jpg",
+        "name": "Rohit Singh"
+      }
+    ]
+  },
+  "gallery": {
+    "heading": "Photo's From Travellers",
+    "content": "Explore the stunning beauty of Uttarakhand through our curated gallery. From majestic mountains to serene lakes, discover the natural wonders that make this region a must-visit destination",
+    "galleryImages": [
+      "./Assests/nainital.jpg",
+      "./Assests/adventure.jpg",
+      "./Assests/Feature_0.jpg",
+      "./Assests/login.jpg",
+      "./Assests/spiritual.jpg",
+      "./Assests/lord shiva.jpg",
+      "./Assests/nainital.jpg",
+      "./Assests/nature.jpg"
+    ]
+  },
+  "info": {
+    "heading": "Unveil the Wonders of Uttarakhand ",
+    "content": " Explore the wonders of Uttarakhand, from serene temples and        pilgrimage sites to thrilling adventures and breathtaking landscapes. Plan your perfect getaway and immerse yourself in the natural beauty and rich culture of this Himalayan paradise."
+  }
+}
